@@ -10,6 +10,10 @@ ENV/
 dist/
 build/
 *.egg-info/
+.prism.log
+.stdy.log
+_dev
+
 
 # IDE
 .vscode/
