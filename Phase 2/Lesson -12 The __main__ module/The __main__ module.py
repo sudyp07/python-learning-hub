@@ -13,3 +13,14 @@ def main(): → Defines the main function.
 if __name__ == "__main__": → Checks if the file is being run directly.
 main() → Calls the main function.
 """
+
+## lets make it more clear with it
+
+def greet(name):
+    print(f"Hello, {name}!")
+
+def main():
+    greet("Sudip")
+
+if __name__ == "__main__":
+    main()
