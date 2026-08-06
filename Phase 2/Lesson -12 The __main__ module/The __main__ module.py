@@ -1,8 +1,8 @@
 # The main module in Python is written using the special variable __name__.
 
 def main():
-    print("Hello, World!")
-    print("This is the main function.")
+    print("Hello, World!")  #Hello, Sudip!
+    print("This is the main function.")    #This is the main function.
 
 if __name__ == "__main__":
     main()
@@ -20,7 +20,7 @@ def greet(name):
     print(f"Hello, {name}!")
 
 def main():
-    greet("Sudip")
+    greet("Sudip")  #Hello, Sudip!
 
 if __name__ == "__main__":
     main()
