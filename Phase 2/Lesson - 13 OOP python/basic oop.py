@@ -1,3 +1,9 @@
+"""
+Class name: PascalCase
+Object/variable name: snake_case
+Method name: snake_case
+"""
+
 # ============================================
 # 1. CLASS - Blueprint for creating objects
 # ============================================
