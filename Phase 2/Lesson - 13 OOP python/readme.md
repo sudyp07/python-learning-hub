@@ -61,7 +61,7 @@ class BankAccount:
         self.balance += amount
 
 
-account = BankAccount("Ankita", 1_000.0)
+account = BankAccount("Sudip", 1_000.0)
 account.deposit(500.0)
 print(account.balance)  # 1500.0
 ```
@@ -248,10 +248,10 @@ class Student:
         self.course = course
 
 
-ankita = Student("Ankita", "Artificial Intelligence")
+Sudip = Student("Sudip", "Artificial Intelligence")
 maya = Student("Maya", "Cybersecurity")
 
-print(ankita.name)
+print(Sudip.name)
 print(maya.course)
 ```
 
@@ -268,19 +268,19 @@ class Greeter:
 
 
 greeter = Greeter()
-print(greeter.greet("Ankita"))
+print(greeter.greet("Sudip"))
 ```
 
 This call:
 
 ```python
-greeter.greet("Ankita")
+greeter.greet("Sudip")
 ```
 
 is conceptually equivalent to:
 
 ```python
-Greeter.greet(greeter, "Ankita")
+Greeter.greet(greeter, "Sudip")
 ```
 
 `self` is a strong convention rather than a reserved keyword. Always follow the convention for readability.
@@ -594,7 +594,7 @@ class BankAccount:
 Usage remains natural:
 
 ```python
-account = BankAccount("Ankita", 500)
+account = BankAccount("Sudip", 500)
 print(account.balance)
 account.balance = 750
 ```
@@ -666,7 +666,7 @@ class SecurityAnalyst(Employee):
         return "Security Analyst"
 
 
-analyst = SecurityAnalyst("Ankita")
+analyst = SecurityAnalyst("Sudip")
 print(analyst.name)
 print(analyst.describe_role())
 ```
@@ -852,7 +852,7 @@ EAFP avoids race conditions between checking and acting and works naturally with
 ```python
 print(len("Python"))
 print(len([1, 2, 3]))
-print(len({"name": "Ankita"}))
+print(len({"name": "Sudip"}))
 ```
 
 Each type responds to the same `len()` operation through its own implementation.
@@ -1226,10 +1226,10 @@ Usage:
 
 ```python
 grades = GradeBook()
-grades["Ankita"] = 92
+grades["Sudip"] = 92
 
-print(grades["Ankita"])
-print("Ankita" in grades)
+print(grades["Sudip"])
+print("Sudip" in grades)
 print(len(grades))
 ```
 
@@ -1507,7 +1507,7 @@ class Box(Generic[T]):
 
 ```python
 number_box: Box[int] = Box(42)
-name_box: Box[str] = Box("Ankita")
+name_box: Box[str] = Box("Sudip")
 ```
 
 ### 16.4 Subclass-aware return types
@@ -1567,7 +1567,7 @@ print(first is alias)   # True
 ### 17.2 Assignment does not copy
 
 ```python
-original = Student("Ankita")
+original = Student("Sudip")
 alias = original
 alias.subjects.append("Python")
 print(original.subjects)  # ['Python']
@@ -1873,7 +1873,7 @@ import unittest
 
 class TestBankAccount(unittest.TestCase):
     def test_deposit_increases_balance(self) -> None:
-        account = BankAccount("Ankita", 100)
+        account = BankAccount("Sudip", 100)
 
         account.deposit(50)
 
@@ -1881,7 +1881,7 @@ class TestBankAccount(unittest.TestCase):
 
     def test_negative_balance_is_rejected(self) -> None:
         with self.assertRaises(ValueError):
-            BankAccount("Ankita", -1)
+            BankAccount("Sudip", -1)
 
 
 if __name__ == "__main__":
@@ -2103,7 +2103,7 @@ class User:
 ### Mistake 3: Calling an instance method on the class incorrectly
 
 ```python
-user = User("ankita")
+user = User("Sudip")
 user.greet()
 ```
 
