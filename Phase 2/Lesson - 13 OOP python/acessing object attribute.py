@@ -1,3 +1,12 @@
+"""
+Class = Blueprint
+Object = Real item
+Attribute = Information
+Method = Action
+self = Current object
+__init__ = Object setup method
+"""
+
 class Student:
     def __init__(self, name, age, course):
         self.name = name
