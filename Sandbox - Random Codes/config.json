@@ -1,0 +1,6 @@
+{
+    "theme": "dark",
+    "auto_backup": true,
+    "backup_interval": 3600,
+    "max_history": 100
+}
