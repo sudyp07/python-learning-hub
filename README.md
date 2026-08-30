@@ -362,7 +362,7 @@ This project is licensed under the MIT License.
 
 ## 👨‍💻 Author
 
-**Sudip Yogi**
+**Sudip Nepal**
 - GitHub: [@sudyp07](https://github.com/sudyp07)
 
 ---
